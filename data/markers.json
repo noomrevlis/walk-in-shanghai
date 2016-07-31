@@ -9,7 +9,21 @@
         "description": "coffee ",
         "marker-size": "medium",
         "marker-color": "#e7857f",
-        "marker-symbol": "cafe"
+        "marker-symbol": "cafe",
+        "images": [
+            [
+                "http://youimg1.c-ctrip.com/target/fd/tg/g1/M08/82/16/CghzfFWX3aOAC8vfABIa8JcbLno411.jpg",
+                "武康路是一条安静低调，充满历史文化气息的马路."
+            ],
+            [
+                "http://file29.mafengwo.net/M00/4B/E0/wKgBpVVivPCAHIxAABAX35qfKF473.jpeg",
+                "穿越上海百年的时光隧道."
+            ],
+            [
+                "http://file29.mafengwo.net/M00/4B/FA/wKgBpVVivQuAPBzfABGCCTUcw-E35.jpeg",
+                "高大的梧桐树，炎炎夏日绿色的遮盖."
+            ]
+         ]
       },
       "geometry": {
         "coordinates": [
@@ -28,7 +42,22 @@
         "description": "test desc",
         "marker-size": "medium",
         "marker-color": "#7ec9b1",
-        "marker-symbol": "bar"
+        "marker-symbol": "bar",
+        "images": [
+            [
+                "http://youimg1.c-ctrip.com/target/tg/676/900/696/be1e317e7a6f4ec693e62002fe57c70f.jpg",
+
+                "武康路是一条安静低调，充满历史文化气息的马路."
+            ],
+            [
+                "http://img.bbs.pchome.net/dcbbs/222_1000/221782.jpg",
+                "穿越上海百年的时光隧道."
+            ],
+            [
+                "http://img8.zol.com.cn/bbs/upload/20581/20580634.jpg ",
+                "一路向前."
+            ]
+         ]
       },
       "geometry": {
         "coordinates": [

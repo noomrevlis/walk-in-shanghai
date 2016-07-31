@@ -1,7 +1,6 @@
 // Todo:
 
-// marker with slideshow https://www.mapbox.com/mapbox.js/example/v1.0.0/markers-with-image-slideshow/
-// marker hover effective https://www.mapbox.com/mapbox.js/example/v1.0.0/show-tooltips-on-hover/
+// add a trigger to draw path
 // geojson file structure, set a filter of different marker
 
 L.mapbox.accessToken = 'pk.eyJ1Ijoibm9vbXJldmxpcyIsImEiOiJjaW91Nm1hem8wMG83dW9tOHoycTdtbnRsIn0.ubjVj1rxUJ9rDVv_xppzHA';
@@ -50,8 +49,40 @@ function finishedLoading() {
                     icon: L.mapbox.marker.icon(spot.properties),
                     title: spot.properties.title
                 });
-                marker.bindPopup(spot.properties.description);
+
+                var images = spot.properties.images;
+                var slideshowContent = '';
+                for(var j = 0; j < images.length; j++) {
+                    var img = images[j];
+
+                    slideshowContent += '<div class="image' + (j === 0 ? ' active' : '') + '">' +
+                                          '<img src="' + img[0] + '" />' +
+                                          '<div class="caption">' + img[1] + '</div>' +
+                                        '</div>';
+                }
+
+                // Create custom popup content
+                var popupContent = '<div id="' + spot.properties.id + '" class="popup">' +
+                                       '<h2>' + spot.properties.title + '</h2>' +
+                                       '<div class="slideshow">' +
+                                           slideshowContent +
+                                       '</div>' +
+                                       '<div class="cycle">' +
+                                           '<a href="#" class="prev">&laquo; Previous</a>' +
+                                           '<a href="#" class="next">Next &raquo;</a>' +
+                                       '</div>'
+                                   '</div>';
+                marker.bindPopup(popupContent, {
+                    closeButton: false,
+                    minWidth: 320
+                });
                 markers.addLayer(marker);
+                markers.on('mouseover', function(e) {
+                    e.layer.openPopup();
+                });
+                markers.on('mouseout', function(e) {
+                    e.layer.closePopup();
+                });
             }
             map.addLayer(markers);
         };
@@ -85,6 +116,28 @@ function finishedLoading() {
             coordinates.innerHTML = 'Latitude: ' + m.lat + '<br />Longitude: ' + m.lng;
         }
     }
-
 }
+
+$('#map').on('click', '.popup .cycle a', function() {
+    var $slideshow = $('.slideshow'),
+        $newSlide;
+
+    if ($(this).hasClass('prev')) {
+        var $newSlide = $slideshow.find('.active').prev();
+        if ($newSlide.index() < 0) {
+            $newSlide = $('.image').last();
+        }
+    } else {
+        $newSlide = $slideshow.find('.active').next();
+        if ($newSlide.index() < 0) {
+            $newSlide = $('.image').first();
+        }
+    }
+
+    $slideshow.find('.active').removeClass('active').hide();
+    $newSlide.addClass('active').show();
+    return false;
+});
+     
+            
 
