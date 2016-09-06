@@ -1,0 +1,193 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Site",
+      "properties": {
+        "title": "武康路",
+        "marker-size": "medium",
+        "marker-color": "#e7857f",
+        "marker-symbol": "heart"
+      },
+      "geometry": {
+        "coordinates": [
+          121.435,
+          31.21
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Sign",
+      "properties": {
+        "description": "start",
+        "marker-size": "medium",
+        "marker-color": "#e7857f",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "coordinates": [
+          121.433330,
+          31.205900
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Sign",
+      "properties": {
+        "description": "start",
+        "marker-size": "medium",
+        "marker-color": "#7ec9b1",
+        "marker-symbol": "cross"
+      },
+      "geometry": {
+        "coordinates": [
+          121.434733,
+          31.215164
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Spot",
+      "properties": {
+        "id": "marker-ip212jtx0",
+        "title": "grains",
+        "description": "coffee ",
+        "marker-size": "medium",
+        "marker-color": "#e7857f",
+        "marker-symbol": "cafe",
+        "images": [
+            [
+                "http://youimg1.c-ctrip.com/target/fd/tg/g1/M08/82/16/CghzfFWX3aOAC8vfABIa8JcbLno411.jpg",
+                "武康路是一条安静低调，充满历史文化气息的马路."
+            ],
+            [
+                "http://file29.mafengwo.net/M00/4B/E0/wKgBpVVivPCAHIxAABAX35qfKF473.jpeg",
+                "穿越上海百年的时光隧道."
+            ],
+            [
+                "http://file29.mafengwo.net/M00/4B/FA/wKgBpVVivQuAPBzfABGCCTUcw-E35.jpeg",
+                "高大的梧桐树，炎炎夏日绿色的遮盖."
+            ]
+         ]
+      },
+      "geometry": {
+        "coordinates": [
+          121.435275,
+          31.21137
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Spot",
+      "properties": {
+        "id": "marker-ip21852l1",
+        "title": "bar",
+        "description": "test desc",
+        "marker-size": "medium",
+        "marker-color": "#7ec9b1",
+        "marker-symbol": "bar",
+        "images": [
+            [
+                "http://youimg1.c-ctrip.com/target/tg/676/900/696/be1e317e7a6f4ec693e62002fe57c70f.jpg",
+
+                "武康路是一条安静低调，充满历史文化气息的马路."
+            ],
+            [
+                "http://img.bbs.pchome.net/dcbbs/222_1000/221782.jpg",
+                "穿越上海百年的时光隧道."
+            ],
+            [
+                "http://img8.zol.com.cn/bbs/upload/20581/20580634.jpg ",
+                "一路向前."
+            ]
+         ]
+      },
+      "geometry": {
+        "coordinates": [
+          121.43491,
+          31.214746
+        ],
+        "type": "Point"
+      }
+    },
+    {
+       "type":"Path",
+       "properties":{
+          "title":"武康路",
+          "description":"武康路全长1700米",
+          "stroke":"#1087bf",
+          "stroke-width":4,
+          "stroke-opacity":1
+       },
+       "geometry":{
+          "coordinates":[
+             [
+                121.4333,
+                31.205942
+             ],
+             [
+                121.433354,
+                31.206134
+             ],
+             [
+                121.433499,
+                31.206364
+             ],
+             [
+                121.433628,
+                31.20657
+             ],
+             [
+                121.434593,
+                31.208016
+             ],
+             [
+                121.434963,
+                31.208543
+             ],
+             [
+                121.435334,
+                31.209098
+             ],
+             [
+                121.435747,
+                31.210177
+             ],
+             [
+                121.43601,
+                31.211168
+             ],
+             [
+                121.436449,
+                31.212828
+             ],
+             [
+                121.436401,
+                31.213416
+             ],
+             [
+                121.436133,
+                31.213966
+             ],
+             [
+                121.435596,
+                31.214778
+             ],
+             [
+                121.435414,
+                31.214962
+             ],
+             [
+                121.434615,
+                31.215214
+             ]
+          ],
+          "type":"LineString"
+       }
+    }
+  ]
+}
